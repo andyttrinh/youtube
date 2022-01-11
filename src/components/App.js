@@ -5,14 +5,13 @@ class App extends React.Component {
     state = {videos: ''};
 
     onSubmit = (term) => {
-        this.setState({videos: term});
+        
     }
 
     render() {
         return (
             <div>
                 <SearchBar onSubmit={this.onSubmit} />
-                <div>{this.state.videos}</div>
             </div>
         );
     }
